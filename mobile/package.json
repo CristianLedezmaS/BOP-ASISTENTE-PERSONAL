@@ -1,0 +1,41 @@
+{
+  "name": "bop-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "node node_modules/expo/bin/cli start",
+    "android": "node node_modules/expo/bin/cli start --android",
+    "ios": "node node_modules/expo/bin/cli start --ios",
+    "web": "node node_modules/expo/bin/cli start --web",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "build:android:preview": "npx eas-cli build --platform android --profile preview",
+    "prebuild:android": "node node_modules/expo/bin/cli prebuild --platform android"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^7.3.18",
+    "@react-navigation/native-stack": "^7.18.10",
+    "expo": "^57.0.18",
+    "expo-linear-gradient": "^57.0.1",
+    "expo-secure-store": "~57.0.2",
+    "expo-status-bar": "^57.0.1",
+    "expo-system-ui": "^57.0.3",
+    "lucide-react-native": "^1.37.0",
+    "nativewind": "^4.2.6",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-gesture-handler": "~2.32.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-svg": "15.15.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-preset-expo": "^57.0.9",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~6.0.3"
+  }
+}
